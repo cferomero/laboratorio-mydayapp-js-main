@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/base.css">
+    <title>MyDayApp - JS</title>
+
+    <!-- <script type="module" src="js/tasks.js"></script> -->
+  </head>
+  <body>
+    <section class="todoapp">
+      <header class="header">
+        <div class="container">
+          <h1>My Day</h1>
+          <p>All my tasks in one place</p>
+          <input
+            class="new-todo"
+            id="new-todo"
+            placeholder="Type new todo"
+            autofocus
+            type="text"
+          />
+        </div>
+      </header>
+      <div class="container todoapp-wrapper">
+
+        <section class="main">
+          <ul class="todo-list"></ul>
+        </section>
+
+        <footer class="footer">
+          <span class="todo-count"><strong>0</strong> <span id="spanCounter">item left</span></span>
+          <ul class="filters">
+            <li><a href="#/"  class="selected">All</a></li>
+            <li><a href="#/pending">Pending</a></li>
+            <li><a href="#/completed" id="completed">Completed</a></li>
+          </ul>
+          <button class="clear-completed">Clear completed</button>
+        </footer>
+      </div>
+    </section>
+    
+    
+    <script src="js/utils.js"></script>
+  </body>
+</html>
